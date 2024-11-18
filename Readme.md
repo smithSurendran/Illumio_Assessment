@@ -22,7 +22,17 @@ This program parses AWS-style flow log data to map each log entry to a tag based
 - `flow_log.txt`: Input file containing flow log data.
 - `lookup_table.csv`: Lookup table mapping `dstport` and `protocol` combinations to tags.
 - `output.txt`: Output file containing tag and port/protocol combination counts.
-- `flow_log_parser.ipynb`: The main program notebook.
+- `logFlow.ipynb`: The main program notebook.
 
 ## Installation and Setup
 This program uses only the default Python standard library and requires no additional dependencies.
+
+### Running the Notebook in Google Colab
+1. **Upload the Notebook**:
+   - Go to [Google Colab](https://colab.research.google.com/).
+   - Upload `logFlow.ipynb` using the "File > Upload notebook" option.
+
+2. **Upload Input Files**:
+   - Once the notebook is open in Google Colab, use the file upload cell provided in the notebook to upload `logFlow.txt` and `lookup_table.csv`.
+3. **Download the Output**:
+   - After running all the cells, the `output.txt` file will be generated. Use the download link provided in the notebook to save the output to your local machine.
